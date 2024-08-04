@@ -11,10 +11,6 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.unitconversion.databinding.ActivityWeightBinding
 
 class WeightActivity : AppCompatActivity() {
-//    override fun onCreate(savedInstanceState: Bundle?) {
-//        super.onCreate(savedInstanceState)
-//        enableEdgeToEdge()
-//        setContentView(R.layout.activity_weight)
 private lateinit var binding: ActivityWeightBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
