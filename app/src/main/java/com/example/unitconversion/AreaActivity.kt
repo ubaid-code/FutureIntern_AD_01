@@ -18,6 +18,7 @@ class AreaActivity : AppCompatActivity() {
 
         val areaUnits = arrayOf("Square Meter", "Square Kilometer", "Hectare", "Acre")
         val adapter = ArrayAdapter(this, R.layout.simple_spinner_item, areaUnits)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.spinnerFrom.adapter = adapter
         binding.spinnerTo.adapter = adapter
 
@@ -25,7 +26,6 @@ class AreaActivity : AppCompatActivity() {
             convertArea()
         }
     }
-
     private fun convertArea() {
         val fromUnit = binding.spinnerFrom.selectedItem.toString()
         val toUnit = binding.spinnerTo.selectedItem.toString()

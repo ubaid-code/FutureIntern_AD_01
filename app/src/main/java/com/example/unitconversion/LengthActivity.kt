@@ -20,6 +20,7 @@ class LengthActivity : AppCompatActivity() {
 
         val lengthUnits = arrayOf("Meter", "Kilometer", "Centimeter", "Inch", "Foot")
         val adapter = ArrayAdapter(this, R.layout.simple_spinner_item, lengthUnits)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.spinnerFrom.adapter = adapter
         binding.spinnerTo.adapter = adapter
 

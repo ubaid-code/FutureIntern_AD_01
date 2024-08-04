@@ -20,6 +20,7 @@ class TemperatureActivity : AppCompatActivity() {
 
         val temperatureUnits = arrayOf("Celsius", "Fahrenheit", "Kelvin")
         val adapter = ArrayAdapter(this, R.layout.simple_spinner_item, temperatureUnits)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.spinnerFrom.adapter = adapter
         binding.spinnerTo.adapter = adapter
 

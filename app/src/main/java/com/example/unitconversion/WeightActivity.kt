@@ -24,6 +24,7 @@ private lateinit var binding: ActivityWeightBinding
 
         val weightUnits = arrayOf("Gram", "Kilogram", "Pound", "Ounce")
         val adapter = ArrayAdapter(this, R.layout.simple_spinner_item, weightUnits)
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
         binding.spinnerFrom.adapter = adapter
         binding.spinnerTo.adapter = adapter
 
